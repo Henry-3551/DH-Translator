@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+    background: ghostwhite;
+    font-family: Poppins;
+    color: aliceblue;
+    height: auto;
+    padding: 0px;
+}
+
+main{
+    background: linear-gradient(white, lightgray, lightgray, white, lightgray);
+    padding: 20px;
+    height: calc(100% - 100px);
+    overflow-x: hidden;
+}
+div{
+  width: 100%;  
+  height: auto;
+}
+video{
+  height: 30vh;
+  width: 100%;
+  border-radius: 5px;
+}
+#header{
+  position: relative;
+  padding-left: 10px;
+  height: 17vh;
+  background: rgba(28,28,28,0.9);
+  margin-bottom: 20px;
+}
+.widgets{
+  padding-left: 20px;
+}
+.widgets > button{
+  color: black;
+  width: 45px;
+}
+.material-icons{
+  color: black;
+  font-size: 20px;
+}
+section{
+  padding: 15px;
+  background: white;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+.box-edit{
+  border: none;
+  width: 25.4%;
+  height: 20px;
+  float: right;
+}
+#btn1{
+  float: left;
+}
+#btn2{
+  float: right;
+}
+#btn1, #btn2{
+  font-size: 0.5em;
+  font-weight: 600;
+  width: 35px;
+  color: black
+}
+.banner{
+  width: 100%;
+  height: auto;
+}
+#banner-image{
+  width: 100%;
+}
+#input-heading, textarea{
+  padding: 15px;
+  height: auto;
+  font-size: 0.85em !important;
+  line-height: 1.5rem;
+  background-color: transparent;
+  color: gray;
+  border: none;
+  border-radius: 5px 5px 0 0;
+}
+textarea {
+         background-color: lightpink;
+         color: aliceblue;
+         z-index: 1;
+         height: 35vh;
+         width: 100%;
+         border-radius: 5px;
+         outline: none;
+         resize: none;
+         overflow-y: scroll;
+      }
+      
+  button{
+    width: 60px;
+    padding: 5px;
+    margin-bottom: 20px;
+    display: inline;
+    outline: none;
+    text-align: center;
+    border: 1.5px solid lightgray;
+    border-radius: 5px;
+    background: transparent;
+  }
+  button:hover{
+    background: lightgray;
+  }
+  button:active{
+    padding: 3px;
+  }
+  .tooltip-content {
+         transition: all 0.2s;
+         visibility: hidden; /* hides the tooltip content */
+         
+         /* positions the tooltip content */
+         position: absolute;
+         z-index: 1;
+         width: 70px;
+         margin-left: -35px; /* (width / 2) x -1 */
+         left: 50%;
+         top: -110%; /* to the top */
+      }
+      .tooltip:hover > .tooltip-content {
+         visibility: visible; /* shows the tooltip content on mouse over */
+      }
+      .tooltip > .tooltip-content::after {
+         content: " ";
+         position: absolute;
+         top: 110%;
+         left: 50%;
+         margin-left: -5px;
+         transition: 0.2s;
+      }
+  img#img1,#img2{
+      width: 100%;
+  }
+  #logo{
+      width: 100%;
+  }
+  
+  #copy-text{
+    position: relative;
+    float: right;
+    top: 0px;
+    right: 0px;
+  }
+  #text-output{
+    padding: 15px;
+    font-size: 0.85em  !important;
+    line-height: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 100%;
+    height: 35vh;
+    overflow-y: scroll  !important;
+    background: lightpink;
+  }
+  #output{
+      color: ghostwhite;
+      display: block;
+  }
+  #hide{
+      display: block;
+      opacity: 1;
+  }
+ button.add-button{
+   background: transition;
+   color: black;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   padding: 10px;
+   margin-bottom: 0px;
+   width: auto;
+   height: 10vh;
+   border: 2px solid black;
+   outline: none;
+   border-radius: 0px;
+ }
+ button.add-button > img{
+   width: 40px;
+   margin-left: 20px;
+ }
+  div select{
+      outline: none;
+      padding: 5px;
+      border-radius: 2px;
+      border: 1.2px solid violet;
+      transition: .3s;
+  }
+    div select:hover {
+      border: 2px solid violet;
+      transition: .3s;
+    }
