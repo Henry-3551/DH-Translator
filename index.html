@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ii-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Translator App built using Google Translate API. Translates texts to 130+ languages. Simple and user-friendly. PWA Web Apps.">
+  <meta name="robots" content="index, nofollow, max-image-preview:standard " />
+  <meta name="googlebot" content="index" />
+   <meta content="translate" name="google"/>
+  <meta name="author" content="Henry Ani (Henry-3551)">
+  <meta name="theme-color" content="rgba(20,20,20,0.9)">
+  <meta property="og:image" content="icon-512.png">
+
+  <title>Translate app</title>
+  
+  <script src="app.js" defer></script>
+  
+  <link rel="manifest" href="manifest.json" crossorigin="use-credentials"/>
+   <link rel="canonical" href="https://henry-3551.github.io/DH-Translator/"/>
+  
+   <link rel="icon" href="logo-icon.png" />
+
+  <!-- HTML -->
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body">
+  
+    <div id="header">
+      <img id="logo" src="logo.png" alt="logo.png">
+    </div>
+    
+    <div class="banner" oncontextmenu="return false">
+      <div class="widgets">
+        <button id="light">Light</button>
+        <button id="dark">Dark</button>
+      </div>
+      <img id="banner-image" src="banner.jpg" alt="banner.jpg">
+    </div>
+
+  <main>
+    <div class="video" oncontextmenu="return false">
+      <video src="video.mp4" poster="banner.jpg" autoplay muted loop>
+    </div>
+    
+    <section>
+    <div class="translation-box" oncontextmenu="return true">
+      
+      <div class="box-edit">
+        <button id="btn1" onclick="doThis()">Clear
+        <i class="material-icons">
+          refresh
+        </i>
+      </button>
+        
+        <button id="btn2">
+          Paste
+          <i class="material-icons">
+            content_paste_go
+          </i>
+        </button>
+        
+      </div>
+      
+      <div id="input-heading"><p>Enter sentence here...👇👇👇</p></div>
+      
+      <textarea id="input" autocomplete="true">    </textarea>
+
+      <div id="text-output">
+        <p id="hide" class="hidden">Show translated sentence here...</p>
+        <p id="output"></p>
+      </div>
+      </div>
+
+    <div>
+      <button onclick="getValue()" oncontextmenu="return false">
+        <img id="img1" src="move_to.png" alt="">
+      </button> 
+
+      <button class="tooltip" id="copy-text" onclick="copyText()">
+        <img src="copied.png" class="tooltip-content" alt="Copied" />
+        <img id="img2" src="copy.png" alt="Copy">
+      </button>
+    </div>
+      
+    </section>
+
+      <div id="google_translate_element" style="background: white; padding: 15px; border-radius: 10px;"></div>
+
+      <!-- function which will translate the web page using google translator -->
+
+  </main>
+  
+  <button class="add-button">
+    <img src="logo-icon.png" alt="logo-icon.png">
+    <h4>Add DH Translator to Home screen</h4>
+  </button>
+  
+
+  <!-- Script code for google translator API -->
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+  </script>
+
+
+
+  <!-- Project -->
+  <script src="translate.js"></script>
+</body>
+
+</html>
